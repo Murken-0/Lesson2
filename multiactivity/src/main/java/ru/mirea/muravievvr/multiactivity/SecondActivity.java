@@ -2,28 +2,23 @@ package ru.mirea.muravievvr.multiactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    private EditText edit;
-    public String TAG = MainActivity.class.getSimpleName();
+public class SecondActivity extends AppCompatActivity {
+    private TextView textView;
+    public String TAG = SecondActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        edit = findViewById(R.id.editText);
+        setContentView(R.layout.activity_second);
         Log.i(TAG, "onCreate");
-    }
 
-    public void onClickNewActivity(View v) {
-        Intent intent = new Intent(this, SecondActivity.class);
-        intent.putExtra("key", edit.getText().toString());
-        startActivity(intent);
+        textView = findViewById(R.id.textView);
+        String text = (String) getIntent().getSerializableExtra("key");
+        textView.setText(text);
     }
 
     @Override
