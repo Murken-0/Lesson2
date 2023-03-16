@@ -1,4 +1,4 @@
-package ru.mirea.muravievvr.Lesson2;
+package ru.mirea.muravievvr.intentfilter;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("ru.mirea.muravievvr.Lesson2", appContext.getPackageName());
+        assertEquals("ru.mirea.muravievvr.intentfilter", appContext.getPackageName());
     }
 }

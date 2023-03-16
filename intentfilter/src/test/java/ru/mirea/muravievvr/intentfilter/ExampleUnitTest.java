@@ -1,4 +1,4 @@
-package ru.mirea.muravievvr.Lesson2;
+package ru.mirea.muravievvr.intentfilter;
 
 import org.junit.Test;
 

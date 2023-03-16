@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'ru.mirea.muravievvr.Lesson2'
+    namespace 'ru.mirea.muravievvr.intentfilter'
     compileSdk 33
 
     defaultConfig {
-        applicationId "ru.mirea.muravievvr.Lesson2"
+        applicationId "ru.mirea.muravievvr.intentfilter"
         minSdk 26
         targetSdk 33
         versionCode 1
